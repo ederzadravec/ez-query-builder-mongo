@@ -1,13 +1,13 @@
 {
-  "name": "mongo-query-builder",
+  "name": "ez-query-builder-mongo",
   "version": "1.0.0",
-  "main": "dist/index.js",
-  "repository": "git@github.com:ederzadravec/mongo-query-builder.git",
+  "main": "lib/main.js",
+  "repository": "git@github.com:ederzadravec/ez-query-builder-mongo.git",
   "author": "Éder Zadravec <ederzadravec@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack --config webpack.config.js",
-    "postinstall": "npm build"
+    "prepare": "npm run-script build",
+    "build": "webpack --config webpack.config.js"
   },
   "dependencies": {
     "ramda": "^0.25.0"
