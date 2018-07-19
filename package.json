@@ -1,0 +1,31 @@
+{
+  "name": "mongo-query-builder",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "repository": "git@github.com:ederzadravec/mongo-query-builder.git",
+  "author": "Éder Zadravec <ederzadravec@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "postinstall": "npm build"
+  },
+  "dependencies": {
+    "ramda": "^0.25.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-ramda": "^1.5.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.6.1",
+    "eslint-config-airbnb": "^15.1.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.3.0",
+    "webpack": "^3.11.0",
+    "webpack-node-externals": "^1.6.0"
+  }
+}
