@@ -3,11 +3,11 @@
 
 ## Install
 
-run `yarn install --save-dev ez-query-builder-mongo` or `npm i --save-dev ez-query-builder-mongo`
+run `yarn add --dev ez-query-builder-mongo` or `npm i --save-dev ez-query-builder-mongo`
 
 ## How to use
 
-### In
+### Input
 ```
 import { queryBuilder } from "ez-query-builder-mongo";
 
@@ -21,7 +21,7 @@ const params = {
 queryBuilder(params)
 ```
 
-  ### Out
+### Output
 ```
 {
 	$or: [
