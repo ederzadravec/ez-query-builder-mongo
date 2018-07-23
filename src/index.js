@@ -21,7 +21,7 @@ export const queryBuilder = obj => {
       const currentData = R.path([v], obj);
 
       const newPaths = R.cond([
-        [x => R.is(String, v) && (R.is(String, x) || R.is(Array, x)), x => [ getNamePath(path, v, x) ]],
+        [x => R.is(String, v) && (R.is(String, x) || R.is(Array, x) || R.is(Boolean, x)), x => [ getNamePath(path, v, x) ]],
         [R.is(Object), x => searchPaths(currentData, currentPath)],
       ])(currentData)
 
